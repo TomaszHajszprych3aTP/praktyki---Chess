@@ -1,25 +1,25 @@
-# How to play chess
+# Jak grać w szachy
 
-file chess.py is game file
-file "position" is file where current game state is being saved
-file board.py is a program which reads "position" file and display chess board based on it
+Plik chess.py to plik gry.
+Plik "position" to plik, w którym zapisywany jest aktualny stan gry.
+Plik board.py to program, który odczytuje plik "position" i wyświetla szachownicę na jego podstawie.
 
-both python programs should be in same folder. simply start both of them(board.py is used only to display board and is not needed for program to work) and play chess in chess.py program and you can see the change on the board.
-board will most likely lag it's duo to way it is programmed i intended to use chess.py to create chess ai therefor i didnt pay much attention to visuals. the board even tohught it look lagged will work when you make a move in chess.py program
+Obydwa programy w języku Python powinny znajdować się w tym samym folderze. Wystarczy uruchomić oba z nich (board.py służy tylko do wyświetlania planszy i nie jest potrzebny do działania programu), a następnie grać w szachy w programie chess.py. Zmiany na planszy będą widoczne.
 
-<img width="450" src="Untitled.png" alt="chess image">
+Plansza prawdopodobnie będzie miała opóźnienie z powodu sposobu jej programowania. Miałem zamiar użyć chess.py do stworzenia szachowego AI, dlatego nie zwracałem zbytnio uwagi na aspekty wizualne. Mimo że plansza może wydawać się opóźniona, będzie działać po wykonaniu ruchu w programie chess.py.
 
+<img width="450" src="Untitled.png" alt="obrazek szachowy">
 
-# How does it work
-first board and variables are initiated. board is a list of 8 list each contaning 8 elements therefor creating 8x8 chessboard.
+# Jak to działa
 
-each piece has its numerical value pawn = 1, knight = 2, bishop = 3, rook = 5, queen = 9 and king = 10. values of black pieces are negative pawn = -1, knight = -2, bishop = -3, rook = -5 queen = -9 king = -10.
+Najpierw inicjowane są plansza i zmienne. Plansza to lista 8 list, z których każda zawiera 8 elementów, tworząc tym samym szachownicę 8x8.
 
-6 functions are created one for each piece used to check possible of pieces: pawn, knight, bishop, rook, queen, king
+Każdy pionek ma swoją wartość liczbową: pionek = 1, skoczek = 2, goniec = 3, wieża = 5, królowa = 9, a król = 10. Wartości czarnych pionków są ujemne: pionek = -1, skoczek = -2, goniec = -3, wieża = -5, królowa = -9, król = -10.
 
-next user input is saved and changed from string to lists of coordinates for example.: e2 e4 -> [[4, 1][4, 3]] which indicate initial piece position and where it is moved
+Tworzone są 6 funkcji, po jednej dla każdego pionka, służące do sprawdzania możliwych ruchów: pionka, skoczka, gońca, wieży, królowej i króla.
 
-based on piece a player is moving corresponding function is used to find it's legal moves and check if player's move is in legal moves
+Następnie zapisywany jest ruch gracza i zmieniany z formy ciągu znaków na listę współrzędnych, na przykład: e2 e4 -> [[4, 1][4, 3]], co oznacza początkową pozycję pionka i jego nowe położenie.
 
-if yes turn changes to black player otherwise players is prompted to input move again
+Na podstawie pionka, którym porusza się gracz, używana jest odpowiednia funkcja do znalezienia jego legalnych ruchów i sprawdzenia, czy ruch gracza jest zgodny z tymi ruchami.
 
+Jeśli tak, następuje zmiana tury na gracza czarnego, w przeciwnym razie gracz zostaje poproszony o ponowne wprowadzenie ruchu.
