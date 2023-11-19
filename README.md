@@ -7,7 +7,7 @@ file board.py is a program which reads "position" file and display chess board b
 both python programs should be in same folder. simply start both of them(board.py is used only to display board and is not needed for program to work) and play chess in chess.py program and you can see the change on the board.
 board will most likely lag it's duo to way it is programmed i intended to use chess.py to create chess ai therefor i didnt pay much attention to visuals. the board even tohught it look lagged will work when you make a move in chess.py program
 
-<img width="450" src="untitiled.png" alt="chess image">
+<img width="450" src="Untitled.png" alt="chess image">
 
 
 # How does it work
