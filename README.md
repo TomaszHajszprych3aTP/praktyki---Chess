@@ -15,6 +15,8 @@ each piece has its numerical value pawn = 1, knight = 2, bishop = 3, rook = 5, q
 6 functions are created one for each piece used to check possible of pieces: pawn, knight, bishop, rook, queen, king
 
 next user input is saved and changed from string to lists of coordinates for example.: e2 e4 -> [[4, 1][4, 3]] which indicate initial piece position and where it is moved
-based on piece a player is moving corresponding function is used to find it's legal moves and check if player gave a correct coordinates
+
+based on piece a player is moving corresponding function is used to find it's legal moves and check if player's move is in legal moves
+
 if yes turn changes to black player otherwise players is prompted to input move again
 
