@@ -1,4 +1,4 @@
-# Jak grać w szachy
+# Jak uruchomić program
 
 Plik chess.py to plik gry.
 Plik "position" to plik, w którym zapisywany jest aktualny stan gry.
